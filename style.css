@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #cecbe0;
+    color: #000000;
+    font-family: "Poppins";
+  }
+
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    background-color: rgb(180, 135, 29);
+}
+
+
+.container{
+    margin: 3rem;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    block-size: 300px;
+}
+
+.fight{
+    font-size: 5rem;
+}
+
+
+
+.shakeComputer {
+    animation: shakeComputer .8s linear;
+  }
+.shakePlayer {
+    animation: shakePlayer .8s linear;
+  }
+
+
+.player, .comp{
+    block-size: 350px;
+    inline-size: 340px;
+    display: flex;
+    border-radius: 50%;
+    
+}
+
+.score{
+   margin: 2.8rem 0;
+   text-align: center;
+   font-size: 1.8rem;
+}
+
+.player-points{
+    margin-inline-start: 6rem;    
+    font-size: 1.3rem;
+}
+
+.comp-points{
+    margin-inline-end: 6rem;
+    font-size: 1.3rem;
+}
+
+.option{
+    margin: 5rem;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+button{
+    font-size: 1rem;
+    background-color: none;
+    border-radius: 7px;
+    padding: 1rem 2em;
+    inline-size: 150px;
+    background-color: rgb(127, 32, 32);
+    color: #fff;
+    cursor: pointer;
+    
+    transition: 2.s;
+}
+
+.option button:hover{
+    background-color: green;
+}
+
+
+
+@keyframes shakeComputer {
+    0% {
+      transform: rotate(-30deg);
+    }
+    25% {
+      transform: rotate(30deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+    75% {
+      transform: rotate(30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+
+@keyframes shakePlayer {
+    0% {
+      transform: rotate(30deg);
+    }
+    25% {
+      transform: rotate(-30deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+    75% {
+      transform: rotate(-30deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
